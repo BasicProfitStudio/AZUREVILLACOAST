@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # of 'master', afhankelijk van je hoofdbranch
+
+media_folder: "public/images" # Waar geüploade afbeeldingen worden opgeslagen
+public_folder: "/images"
+
+collections:
+  - name: "paginas"
+    label: "Pagina's"
+    files:
+      - file: "content/index.md" # Voorbeeld van een bestand dat je wilt bewerken
+        label: "Homepagina"
+        name: "home"
+        fields:
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Omschrijving", name: "description", widget: "text"}
